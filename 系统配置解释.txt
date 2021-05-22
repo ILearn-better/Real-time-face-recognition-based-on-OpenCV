@@ -1,0 +1,12 @@
+记录:由于个人电脑内置过多python环境,因此有时会弄混.
+-- 指令台打开的为"C:\Users\6\Anaconda3\python.exe"下的python,无法启动sklearn(可能是未安装,也可能是手动配置出错)
+-- 通过prompt打开的python与上面的python路径相同,却不能打开sklearn(keras,opencv,tensorflow)
+
+于是在指令台做如下处理:
+参考:https://www.cnblogs.com/Lamfai/p/10733605.html
+
+conda info --envs	#查看虚拟环境
+
+conda activate base  #进入base环境中
+
+可成功import sklearn
